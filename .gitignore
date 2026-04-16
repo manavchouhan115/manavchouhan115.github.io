@@ -1,0 +1,12 @@
+# Resume / CV (keep off GitHub for privacy)
+CV_ManavChouhan.pdf
+*.pdf
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+*.code-workspace

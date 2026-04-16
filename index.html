@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manav Chouhan | AI & Software Engineer</title>
+  <meta name="description" content="Portfolio of Manav Chouhan — AI/ML & Full-Stack Software Engineer specializing in GenAI, LLMs, and backend systems." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- SCROLL PROGRESS -->
+  <div id="scroll-progress"></div>
+
+  <!-- NOISE OVERLAY -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- LEFT SOCIAL STRIP -->
+  <div class="side-strip side-left" id="side-left">
+    <ul class="side-icons">
+      <li>
+        <a href="https://github.com/manavchouhan115" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://linkedin.com/in/manavchouhan115" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:manavchouhan115@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.749L12 11.36l9.615-7.539h.749A1.636 1.636 0 0 1 24 5.457z"/></svg>
+        </a>
+      </li>
+    </ul>
+    <div class="side-line"></div>
+  </div>
+
+  <!-- RIGHT EMAIL STRIP -->
+  <div class="side-strip side-right" id="side-right">
+    <a href="mailto:manavchouhan115@gmail.com" class="side-email">manavchouhan115@gmail.com</a>
+    <div class="side-line"></div>
+  </div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Manav Chouhan – Home">
+        <img src="images/manav_chouhan_logo.svg" alt="Manav Chouhan" class="nav-logo-img" />
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" id="nav-about">About</a></li>
+        <li><a href="#experience" id="nav-experience">Experience</a></li>
+        <li><a href="#projects" id="nav-projects">Projects</a></li>
+        <li><a href="#education" id="nav-education">Education</a></li>
+        <li><a href="CV_ManavChouhan.pdf" download class="nav-resume-link">Resume ↓</a></li>
+        <li><a href="#contact" class="nav-cta" id="nav-contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+      <div class="hero-orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-status">
+        <span class="status-dot"></span>
+        <span>Open to Work</span>
+      </div>
+
+      <p class="hero-greeting">Hi, my name is</p>
+
+      <h1 class="hero-name gradient-text">Manav Chouhan</h1>
+
+      <h2 class="hero-tagline">
+        I build <span class="typewriter-wrap"><span id="typewriter-text"></span><span class="tw-cursor">|</span></span>
+      </h2>
+
+      <p class="hero-bio">
+        Software & AI Engineer with 4+ years of experience in full-stack backend development,
+        machine learning, and GenAI. I specialize in delivering end-to-end solutions — from
+        data pipelines to production-grade API services and LLM-powered applications.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary magnetic" id="hero-work-btn">View My Work</a>
+        <a href="CV_ManavChouhan.pdf" download class="btn btn-ghost magnetic" id="hero-resume-btn">Download CV ↓</a>
+      </div>
+
+      <div class="hero-socials">
+        <a href="https://linkedin.com/in/manavchouhan115" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://github.com/manavchouhan115" target="_blank" rel="noopener" aria-label="GitHub" class="social-link">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="mailto:manavchouhan115@gmail.com" aria-label="Email" class="social-link">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.749L12 11.36l9.615-7.539h.749A1.636 1.636 0 0 1 24 5.457z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════ ABOUT ═══════════ -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-number">01.</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Hello! I'm Manav, a Software and AI Engineer passionate about building intelligent systems that
+            solve real problems. My journey spans full-stack backend engineering at enterprise scale and
+            cutting-edge AI/ML research.
+          </p>
+          <p>
+            I'm currently pursuing my <strong>Master's in Computing (AI Specialization)</strong> at the
+            <a href="https://nus.edu.sg" target="_blank" rel="noopener">National University of Singapore</a>, while
+            working as an <strong>AI/ML Research Engineer Intern at AI Singapore</strong>, where I design
+            evaluation pipelines for the SEA-LION large language model.
+          </p>
+          <p>
+            I love the intersection of rigorous software engineering and applied AI — from orchestrating
+            multi-agent LangGraph pipelines to deploying production APIs at scale.
+          </p>
+        </div>
+
+        <!-- STATS -->
+        <div class="about-stats reveal">
+          <div class="stat-card">
+            <span class="stat-number" data-target="4">0</span><span class="stat-suffix">+</span>
+            <p class="stat-label">Years Experience</p>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="10">0</span><span class="stat-suffix">+</span>
+            <p class="stat-label">Projects Built</p>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="5">0</span><span class="stat-suffix"></span>
+            <p class="stat-label">Companies Worked</p>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="9" data-decimal=".47">9</span><span class="stat-suffix"></span>
+            <p class="stat-label">BE GPA / 10 (Rank 1)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SKILLS ICON GRID -->
+      <div class="skills-section reveal">
+        <h3 class="skills-heading">Tech I Work With</h3>
+        <div class="skills-icons-grid" id="skills-grid">
+          <!-- Languages -->
+          <div class="skill-icon-card" data-skill="Python">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" loading="lazy"/>
+            <span>Python</span>
+          </div>
+          <div class="skill-icon-card" data-skill="Java">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" loading="lazy"/>
+            <span>Java</span>
+          </div>
+          <div class="skill-icon-card" data-skill="TypeScript">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" loading="lazy"/>
+            <span>TypeScript</span>
+          </div>
+          <div class="skill-icon-card" data-skill="C++">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="C++" loading="lazy"/>
+            <span>C++</span>
+          </div>
+          <!-- AI/ML -->
+          <div class="skill-icon-card" data-skill="PyTorch">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" alt="PyTorch" loading="lazy"/>
+            <span>PyTorch</span>
+          </div>
+          <div class="skill-icon-card" data-skill="TensorFlow">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" loading="lazy"/>
+            <span>TensorFlow</span>
+          </div>
+          <div class="skill-icon-card" data-skill="OpenCV">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg" alt="OpenCV" loading="lazy"/>
+            <span>OpenCV</span>
+          </div>
+          <div class="skill-icon-card" data-skill="Pandas">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" alt="Pandas" loading="lazy"/>
+            <span>Pandas</span>
+          </div>
+          <!-- Web / Backend -->
+          <div class="skill-icon-card" data-skill="FastAPI">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" alt="FastAPI" loading="lazy"/>
+            <span>FastAPI</span>
+          </div>
+          <div class="skill-icon-card" data-skill="Spring Boot">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="Spring Boot" loading="lazy"/>
+            <span>Spring Boot</span>
+          </div>
+          <div class="skill-icon-card" data-skill="React">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" loading="lazy"/>
+            <span>React</span>
+          </div>
+          <!-- Infra -->
+          <div class="skill-icon-card" data-skill="Docker">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker" loading="lazy"/>
+            <span>Docker</span>
+          </div>
+          <div class="skill-icon-card" data-skill="Kubernetes">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" loading="lazy"/>
+            <span>Kubernetes</span>
+          </div>
+          <div class="skill-icon-card" data-skill="AWS">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS" loading="lazy"/>
+            <span>AWS</span>
+          </div>
+          <div class="skill-icon-card" data-skill="PostgreSQL">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" loading="lazy"/>
+            <span>PostgreSQL</span>
+          </div>
+          <div class="skill-icon-card" data-skill="Git">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" loading="lazy"/>
+            <span>Git</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ EXPERIENCE ═══════════ -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-number">02.</span>
+        <h2 class="section-title">Where I've Worked</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="exp-layout reveal">
+
+        <!-- LEFT: Company tiles -->
+        <div class="exp-tabs" role="tablist">
+
+          <button class="exp-tab active" data-target="exp-aisg" role="tab" aria-selected="true">
+            <img src="images/AISG.png" alt="AI Singapore" class="exp-tab-logo" />
+            <div class="exp-tab-info">
+              <span class="exp-tab-company">AI Singapore</span>
+              <span class="exp-tab-period">May 2025 – Present</span>
+            </div>
+            <span class="exp-tab-arrow">›</span>
+          </button>
+
+          <button class="exp-tab" data-target="exp-nus-ta" role="tab" aria-selected="false">
+            <img src="images/NUS.png" alt="NUS" class="exp-tab-logo" />
+            <div class="exp-tab-info">
+              <span class="exp-tab-company">NUS</span>
+              <span class="exp-tab-period">Jan 2025 – Apr 2025</span>
+            </div>
+            <span class="exp-tab-arrow">›</span>
+          </button>
+
+          <button class="exp-tab" data-target="exp-nus-ra" role="tab" aria-selected="false">
+            <img src="images/NUS.png" alt="NUS" class="exp-tab-logo" />
+            <div class="exp-tab-info">
+              <span class="exp-tab-company">NUS Research</span>
+              <span class="exp-tab-period">Sep 2024 – Dec 2024</span>
+            </div>
+            <span class="exp-tab-arrow">›</span>
+          </button>
+
+          <button class="exp-tab" data-target="exp-ptc" role="tab" aria-selected="false">
+            <img src="images/PTC.png" alt="PTC Software" class="exp-tab-logo" />
+            <div class="exp-tab-info">
+              <span class="exp-tab-company">PTC Software</span>
+              <span class="exp-tab-period">Jun 2021 – Jul 2024</span>
+            </div>
+            <span class="exp-tab-arrow">›</span>
+          </button>
+
+          <button class="exp-tab" data-target="exp-damyant" role="tab" aria-selected="false">
+            <div class="exp-tab-logo exp-tab-logo-fallback">D</div>
+            <div class="exp-tab-info">
+              <span class="exp-tab-company">Damyant FinTech</span>
+              <span class="exp-tab-period">Oct 2020 – May 2021</span>
+            </div>
+            <span class="exp-tab-arrow">›</span>
+          </button>
+
+        </div>
+
+        <!-- RIGHT: Detail panels -->
+        <div class="exp-panels">
+
+          <div class="exp-panel active" id="exp-aisg" role="tabpanel">
+            <div class="exp-panel-header">
+              <div>
+                <span class="exp-panel-badge current-badge">Current</span>
+                <h3 class="exp-panel-role">AI/ML Research Engineer Intern</h3>
+                <p class="exp-panel-company">AI Singapore · Singapore</p>
+                <p class="exp-panel-dates">May 2025 – Present</p>
+              </div>
+              <img src="images/AISG.png" alt="AI Singapore" class="exp-panel-logo" />
+            </div>
+            <ul class="exp-bullets">
+              <li>Designing evaluation solutions for the <strong>SEA-LION LLM</strong>, a state-of-the-art language model tailored for Southeast Asian languages.</li>
+              <li>Building scalable <strong>LLM-as-a-judge evaluation pipelines</strong> to benchmark model performance across diverse linguistic tasks.</li>
+              <li>Contributing to research advances in multilingual AI evaluation methodologies.</li>
+            </ul>
+            <div class="exp-tags">
+              <span>Python</span><span>LLMs</span><span>Evaluation Pipelines</span><span>NLP</span><span>Research</span>
+            </div>
+          </div>
+
+          <div class="exp-panel" id="exp-nus-ta" role="tabpanel">
+            <div class="exp-panel-header">
+              <div>
+                <h3 class="exp-panel-role">Teaching Assistant – ML & AI</h3>
+                <p class="exp-panel-company">National University of Singapore · Singapore</p>
+                <p class="exp-panel-dates">Jan 2025 – Apr 2025</p>
+              </div>
+              <img src="images/NUS.png" alt="NUS" class="exp-panel-logo" />
+            </div>
+            <ul class="exp-bullets">
+              <li>Assisted in delivering graduate-level Machine Learning and Artificial Intelligence modules.</li>
+              <li>Guided students through assignments, lab sessions, and conceptual problem-solving in deep learning and AI planning.</li>
+              <li>Provided feedback on student projects spanning classification, regression, and neural architectures.</li>
+            </ul>
+            <div class="exp-tags">
+              <span>Machine Learning</span><span>Deep Learning</span><span>Python</span><span>Teaching</span>
+            </div>
+          </div>
+
+          <div class="exp-panel" id="exp-nus-ra" role="tabpanel">
+            <div class="exp-panel-header">
+              <div>
+                <h3 class="exp-panel-role">Research Assistant – ML & CV</h3>
+                <p class="exp-panel-company">National University of Singapore · Singapore</p>
+                <p class="exp-panel-dates">Sep 2024 – Dec 2024</p>
+              </div>
+              <img src="images/NUS.png" alt="NUS" class="exp-panel-logo" />
+            </div>
+            <ul class="exp-bullets">
+              <li>Built full ML pipelines achieving <strong>95% classification accuracy</strong> on heavily imbalanced datasets.</li>
+              <li>Applied Computer Vision techniques and custom data augmentation strategies to improve model generalization.</li>
+              <li>Researched state-of-the-art approaches for handling class imbalance in real-world settings.</li>
+            </ul>
+            <div class="exp-tags">
+              <span>PyTorch</span><span>Computer Vision</span><span>ML Pipelines</span><span>Research</span>
+            </div>
+          </div>
+
+          <div class="exp-panel" id="exp-ptc" role="tabpanel">
+            <div class="exp-panel-header">
+              <div>
+                <h3 class="exp-panel-role">Senior Software Analyst</h3>
+                <p class="exp-panel-company">PTC Software · India</p>
+                <p class="exp-panel-dates">Jun 2021 – Jul 2024</p>
+              </div>
+              <img src="images/PTC.png" alt="PTC" class="exp-panel-logo" />
+            </div>
+            <ul class="exp-bullets">
+              <li>Developed and maintained production-grade <strong>Java/Spring Boot backend services</strong> serving enterprise clients globally.</li>
+              <li>Reduced production bottlenecks by <strong>25–30%</strong> through systematic query optimization and architectural improvements.</li>
+              <li>Led design and delivery of REST APIs, integrated with CI/CD pipelines using Jenkins and Docker.</li>
+              <li>Collaborated cross-functionally in an Agile environment to consistently ship high-quality features.</li>
+            </ul>
+            <div class="exp-tags">
+              <span>Java</span><span>Spring Boot</span><span>REST APIs</span><span>Docker</span><span>Jenkins</span><span>SQL</span>
+            </div>
+          </div>
+
+          <div class="exp-panel" id="exp-damyant" role="tabpanel">
+            <div class="exp-panel-header">
+              <div>
+                <h3 class="exp-panel-role">Data Science Intern</h3>
+                <p class="exp-panel-company">Damyant FinTech · India</p>
+                <p class="exp-panel-dates">Oct 2020 – May 2021</p>
+              </div>
+              <div class="exp-panel-logo exp-panel-logo-fallback">D</div>
+            </div>
+            <ul class="exp-bullets">
+              <li>Applied ML techniques to financial datasets to derive actionable business insights.</li>
+              <li>Built and evaluated predictive models for risk scoring and trend analysis.</li>
+              <li>Delivered data visualizations and reports to aid stakeholder decision-making.</li>
+            </ul>
+            <div class="exp-tags">
+              <span>Python</span><span>Data Science</span><span>Machine Learning</span><span>FinTech</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ PROJECTS ═══════════ -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-number">03.</span>
+        <h2 class="section-title">Things I've Built</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <!-- PROJECT FILTERS & GRID -->
+      <div class="project-filters reveal">
+        <button class="filter-btn active" data-filter="all" id="filter-all">All</button>
+        <button class="filter-btn" data-filter="genai" id="filter-genai">GenAI</button>
+        <button class="filter-btn" data-filter="ml" id="filter-ml">ML / CV</button>
+        <button class="filter-btn" data-filter="fullstack" id="filter-fullstack">Full-Stack</button>
+        <button class="filter-btn" data-filter="nlp" id="filter-nlp">NLP</button>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+
+        <div class="project-card tilt-card" data-category="fullstack genai">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <div class="project-folder">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+              </div>
+              <a href="https://github.com/manavchouhan115" target="_blank" rel="noopener" class="project-gh-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <h3 class="project-name">DataPilot ETL Platform</h3>
+            <p class="project-desc">Natural-language-driven ETL platform powered by a stateful LangGraph orchestrator with PostgreSQL checkpointing. FastAPI gateway with dedicated microservices for extract, transform, and load.</p>
+            <div class="project-tags"><span>LangGraph</span><span>FastAPI</span><span>PostgreSQL</span><span>ETL</span></div>
+          </div>
+        </div>
+
+        <div class="project-card tilt-card" data-category="genai">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <div class="project-folder">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+              </div>
+              <a href="https://github.com/manavchouhan115" target="_blank" rel="noopener" class="project-gh-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <h3 class="project-name">Autoresearch.ai</h3>
+            <p class="project-desc">Multi-agent research pipeline leveraging LangGraph and Groq for automated literature discovery, synthesis, and report generation with minimal human intervention.</p>
+            <div class="project-tags"><span>LangGraph</span><span>Groq</span><span>Multi-Agent</span><span>GenAI</span></div>
+          </div>
+        </div>
+
+        <div class="project-card tilt-card" data-category="genai">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <div class="project-folder">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+              </div>
+              <a href="https://github.com/manavchouhan115" target="_blank" rel="noopener" class="project-gh-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <h3 class="project-name">SQL Genie</h3>
+            <p class="project-desc">AI agent that translates natural language questions into precise SQL queries using Pydantic-AI. Features schema introspection, query validation, and a clean API interface.</p>
+            <div class="project-tags"><span>Pydantic-AI</span><span>SQL</span><span>LLM</span><span>FastAPI</span></div>
+          </div>
+        </div>
+
+        <div class="project-card tilt-card" data-category="nlp">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <div class="project-folder">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+              </div>
+              <a href="https://github.com/manavchouhan115" target="_blank" rel="noopener" class="project-gh-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <h3 class="project-name">Realtime Meeting Summarizer</h3>
+            <p class="project-desc">Streaming NLP pipeline for live meeting transcription and summarization. Combines OpenAI Whisper for speech-to-text with Mistral-7B for context-aware summaries.</p>
+            <div class="project-tags"><span>Whisper</span><span>Mistral-7B</span><span>NLP</span><span>Streaming</span></div>
+          </div>
+        </div>
+
+        <div class="project-card tilt-card" data-category="ml">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <div class="project-folder">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+              </div>
+              <a href="https://github.com/manavchouhan115" target="_blank" rel="noopener" class="project-gh-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <h3 class="project-name">Hybrid RAG Pipeline</h3>
+            <p class="project-desc">Hybrid retrieval-augmented generation combining dense vector search with SQL retrieval. Routes queries intelligently between RAG, Text-to-SQL, and hybrid modes.</p>
+            <div class="project-tags"><span>RAG</span><span>pgvector</span><span>Groq</span><span>Streamlit</span></div>
+          </div>
+        </div>
+
+        <div class="project-card tilt-card" data-category="genai ml">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <div class="project-folder">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+              </div>
+              <a href="https://github.com/manavchouhan115" target="_blank" rel="noopener" class="project-gh-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+            <h3 class="project-name">CodeGuardian Agent</h3>
+            <p class="project-desc">Autonomous software maintenance agent using ReAct-style reasoning to analyze, plan, and apply code fixes across repositories using Groq-powered inference.</p>
+            <div class="project-tags"><span>LangChain</span><span>Groq</span><span>Agentic AI</span><span>Python</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ EDUCATION ═══════════ -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-number">04.</span>
+        <h2 class="section-title">Education</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="exp-layout reveal">
+
+        <!-- LEFT: Institution tiles -->
+        <div class="exp-tabs" role="tablist">
+
+          <button class="exp-tab active" data-target="edu-nus" role="tab" aria-selected="true">
+            <img src="images/NUS.png" alt="NUS" class="exp-tab-logo" />
+            <div class="exp-tab-info">
+              <span class="exp-tab-company">NUS</span>
+              <span class="exp-tab-period">2024 – 2026</span>
+            </div>
+            <span class="exp-tab-arrow">›</span>
+          </button>
+
+          <button class="exp-tab" data-target="edu-sppu" role="tab" aria-selected="false">
+            <img src="images/SPPU.jpg" alt="Pune University" class="exp-tab-logo" />
+            <div class="exp-tab-info">
+              <span class="exp-tab-company">Pune University</span>
+              <span class="exp-tab-period">2017 – 2021</span>
+            </div>
+            <span class="exp-tab-arrow">›</span>
+          </button>
+
+        </div>
+
+        <!-- RIGHT: Detail panels -->
+        <div class="exp-panels">
+
+          <div class="exp-panel active" id="edu-nus" role="tabpanel">
+            <div class="exp-panel-header">
+              <div>
+                <h3 class="exp-panel-role">Master of Computing</h3>
+                <p class="exp-panel-company">Artificial Intelligence Specialization</p>
+                <p class="exp-panel-company">National University of Singapore</p>
+                <p class="exp-panel-dates">Aug 2024 – Jan 2026</p>
+              </div>
+              <img src="images/NUS.png" alt="NUS" class="exp-panel-logo" />
+            </div>
+            <div class="edu-gpa-chip" style="margin-bottom:20px">
+              <span class="gpa-label">GPA</span>
+              <span class="gpa-value">4.5 / 5.0</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>AI Planning &amp; Decision Making</li>
+              <li>Neural Networks &amp; Deep Learning</li>
+              <li>Uncertainty Modeling in AI</li>
+              <li>Big Data Analytics</li>
+              <li>Knowledge Discovery &amp; Data Mining</li>
+            </ul>
+          </div>
+
+          <div class="exp-panel" id="edu-sppu" role="tabpanel">
+            <div class="exp-panel-header">
+              <div>
+                <h3 class="exp-panel-role">Bachelor of Engineering</h3>
+                <p class="exp-panel-company">Computer Engineering</p>
+                <p class="exp-panel-company">Savitribai Phule Pune University (SPPU)</p>
+                <p class="exp-panel-dates">Aug 2017 – May 2021</p>
+              </div>
+              <img src="images/SPPU.jpg" alt="Pune University" class="exp-panel-logo" />
+            </div>
+            <div class="edu-gpa-chip" style="margin-bottom:20px">
+              <span class="gpa-label">GPA</span>
+              <span class="gpa-value">9.47 / 10.0</span>
+            </div>
+            <ul class="exp-bullets">
+              <li><strong>🥇 Ranked 1st in Department</strong></li>
+              <li>Published: <em>"Raspberry Pi based Surveillance Robot for Real-Time Intrusion Detection and Tracking"</em> — IRJET</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <section id="contact">
+    <div class="container contact-container">
+      <div class="contact-glow-wrap reveal">
+        <p class="contact-overline">05. What's Next?</p>
+        <h2 class="contact-title gradient-text">Get In Touch</h2>
+        <p class="contact-body">
+          I'm currently open to new opportunities — whether it's a full-time role, research collaboration,
+          or a cool project. My inbox is always open. Let's build something great together.
+        </p>
+        <a href="mailto:manavchouhan115@gmail.com" class="btn btn-primary btn-lg magnetic" id="contact-email-btn">
+          Say Hello 👋
+        </a>
+        <div class="contact-socials">
+          <a href="https://linkedin.com/in/manavchouhan115" target="_blank" rel="noopener">LinkedIn</a>
+          <span>·</span>
+          <a href="https://github.com/manavchouhan115" target="_blank" rel="noopener">GitHub</a>
+          <span>·</span>
+          <a href="mailto:manavchouhan115@gmail.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Designed & Built by <strong>Manav Chouhan</strong> · <span id="footer-year"></span></p>
+    <p class="footer-sub">Made with ☕ and too many terminal windows.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

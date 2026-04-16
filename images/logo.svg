@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="48" viewBox="0 0 280 48">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&amp;display=swap');
+    </style>
+  </defs>
+  <!-- "Manav" in bold white -->
+  <text
+    x="0" y="36"
+    font-family="Inter, system-ui, sans-serif"
+    font-size="28"
+    font-weight="800"
+    fill="#f0f0ff"
+    letter-spacing="-0.5"
+  >Manav</text>
+  <!-- "Chouhan" in light indigo -->
+  <text
+    x="103" y="36"
+    font-family="Inter, system-ui, sans-serif"
+    font-size="28"
+    font-weight="300"
+    fill="#818cf8"
+    letter-spacing="-0.5"
+  >Chouhan</text>
+</svg>
